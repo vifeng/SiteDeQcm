@@ -5,7 +5,7 @@ Projet de fin d'année de mon certificat de développeur web au CNAM
 Contexte
 ---
 Les qcm sont réalisés par des professeurs pour des élèves afin de les évaluer. Il y a donc deux accès.
-Les technologies pour ce projets sont : php, bootstrap, html, css
+Les technologies pour ce projets sont : php, bootstrap, html, css, ajax
 Architecture MVC
 
 Comments
@@ -14,6 +14,7 @@ Une grosse partie de mon temps pour ce projet a été consacré à la réflexion
 
 La deuxième grosse partie a été conception de la base de donnée sql.
 
+Pour "automatiser" un peu l'écriture, j'ai créer des fonctions servant à créer des formulaires voir makeform.php et son utilisation dans creerQuestion.php, ajouterQcm.php par exemple
 
 For testing
 ---
