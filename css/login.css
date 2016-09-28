@@ -1,0 +1,22 @@
+
+.form-control{
+	border-radius: 0;
+    margin-bottom: -1px;
+
+}
+.signin {
+	max-width: 340px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.btn-block, .btn-group-lg>.btn, .btn-lg{
+	display: block;
+	width: 100%;
+}
+.form-control,select{
+	color: #878787;
+}
+.form-signin-heading{
+	text-align: center;
+}
+
