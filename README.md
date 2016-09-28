@@ -27,32 +27,20 @@ Pour accéder au site, vous pouvez créer un utilisateur ou utiliser l'un de ceu
 
 Fonctionnalités du programme :
 ---
-	• connexion
-
-	• deconnexion
-
-	• (creationCompte)
-
-	• 	MenuEnseignant
-
-			creerQuestion
-
-			voirQuestions
-
-			générerQcm
-
-			voirNotesEleves
-
-			voirNotesparQcm
-
-	• 	MenuEleve
-
-			ListedesQcm
-
-			QcmEnAttente
-
-			consulterNote
-			
+		Connexion
+		Déconnexion
+		(Création de compte)
+		Menu Enseignant
+			Créer des question
+			Voir des questions
+			Générer des qcm
+			Voir les notes des éleves
+			Voir les notes par Qcm
+		Menu Eleve
+			Liste des Qcm
+			Qcm en attente
+			consulter ses Notes
+					
 
 
 View Demo
