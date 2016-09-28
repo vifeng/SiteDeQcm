@@ -1,5 +1,6 @@
 #Site de Qcm
 ===
+Projet de fin d'année de mon certificat de développeur web au CNAM
 
 Contexte
 ---
@@ -9,7 +10,7 @@ Architecture MVC
 
 Comments
 ---
-Une grosse partie de mon temps pour ce projet a été consacré à la réflexion en amont des fonctionnalités de ce site. Comment il devait être construit et ce qu'il devait apporté. J'essaye d'imaginer tout ce que j'ai à faire et à écrire pour réaliser ce projet. Je vous invite à voir FeuilleDeRoute.txt 
+Une grosse partie de mon temps pour ce projet a été consacré à la réflexion en amont des fonctionnalités de ce site. Comment il devait être construit et ce qu'il devait apporté. J'essaye d'imaginer tout ce que j'ai à faire et à écrire pour réaliser ce projet. Une fois cette feuille de route faite, je vais plus vite, je sais ce que j'ai à faire… Je vous invite à la lire : FeuilleDeRoute.txt 
 
 La deuxième grosse partie a été conception de la base de donnée sql.
 
