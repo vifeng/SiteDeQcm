@@ -1,8 +1,9 @@
-
 <?php
 include_once "Modele/connexion.config.php";
-// setcookie('idProf', '2');
-
+//setcookie('nom', 'josette');
+setcookie('idProf', '2');
+//$_SESSION['user']='jose';
+//
 
 $action="";
 if (isset($_GET['action'])){

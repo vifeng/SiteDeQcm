@@ -12,7 +12,7 @@ if (!empty($quest)){
 	if (isset($_POST['modifier'])) {
 		foreach ($quest as $q){
 			if ($i == count($quest)){
-				//Renvoi sur une page de formulaire de modification
+				// TODO Renvoi sur une page de formulaire de modification
 				// puis sur une page de traitement avec les requêtes suivantes
 				//updateQuestion($question, $idtheme, $idprof);
 				//updateReponse($idQuestion, $reponse, $statutReponse)

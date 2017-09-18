@@ -1,7 +1,7 @@
 <?php
 include_once "connexion.config.php";
 
-
+//Marche
 function setTheme($theme){
 	global $bdd;
 	$req = $bdd -> prepare('INSERT INTO Theme (theme) VALUES(:theme)');
@@ -11,7 +11,7 @@ function setTheme($theme){
 	$req -> closeCursor();	
 };
 
-
+//Marche
 function setStatut($statut){
 	global $bdd;
 	$req = $bdd -> prepare('INSERT INTO Statut (statut) VALUES(:statut)');
@@ -23,7 +23,7 @@ function setStatut($statut){
 };
 
 
-
+//Marche
 function setUser($nom,$prenom, $mail, $login, $motdepasse, $idStatut){
 	global $bdd;
 	$req = $bdd -> prepare('INSERT INTO User (nom, prenom, mail,login, motdepasse, idstatut) VALUES(:nom, :prenom, :mail, :login, :motdepasse, :idstatut)');
@@ -40,7 +40,7 @@ function setUser($nom,$prenom, $mail, $login, $motdepasse, $idStatut){
 };
 
 
-
+//Marche
 function setQuestion($question, $idUser, $idTheme){
 	global $bdd;
 	//je convertis les id en int pour les rentrer dans la base
@@ -65,7 +65,7 @@ function setQuestion($question, $idUser, $idTheme){
 	return $Resultat['idQuestion'];
 };
 
-
+//Marche
 function setReponse($idQuestion, $reponse, $statutReponse, $idTheme){
 		global $bdd;
 		//je convertis les id en int pour les rentrer dans la base
@@ -82,7 +82,6 @@ function setReponse($idQuestion, $reponse, $statutReponse, $idTheme){
 	$req -> closeCursor();
 
 };
-
 function setQcm($TitreQcm, $idTheme){
 	global $bdd;
 	//je convertis les id en int pour les rentrer dans la base

@@ -67,7 +67,19 @@ function selectQuestionTheme($idTheme){
 	$query=$query->fetchAll();
 	return $query;
 };
-
+/*Je viens de modifier : ne marche pas
+function selectQuestionTheme($idTheme){
+	global $bdd;
+	$idTheme=intval($idTheme);
+	$query=$bdd->prepare('SELECT F.idQuestion, Q.Question FROM `Question` Q,`FAITQCM` F 
+WHERE  F.idQuestion = Q.idQuestion AND `idTheme` = (:idTheme) 
+ORDER BY Q.`idQuestion` DESC');
+	$query -> execute(array(
+		':idTheme' => $idTheme,
+		));
+	$query=$query->fetchAll();
+	return $query;
+};*/
 
 function selectReponse(){
 	global $bdd;

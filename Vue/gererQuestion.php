@@ -35,7 +35,7 @@ while ($result=$query->fetch()){
 };
 $form .= "</select>";
 $form .= "</div><div style='margin-bottom: 55px;'></div>";
-$form .= "</div>" ;
+$form .= " </div>" ;
 
 $query->closeCursor();
 echo $form;

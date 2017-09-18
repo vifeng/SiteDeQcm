@@ -38,7 +38,7 @@ if (null!==extract($_POST) && !empty(trim(extract($_POST)))){
 	$theme = selectThemeid($idTheme);
 	echo "<div>Vous avez choisi de faire un questionnaire pour le thème : <b>" .$theme['theme'] ."</b></div>";
 
-//j'utilise des fonctions de création de formulaire "automatique" que j'ai crée
+
 	makeFormStart('./modele/verifQcm.php','POST');
 		createHiddenInputValeur('idTheme',$idTheme);
 		createHiddenInputValeur('nbquestion', $nbquestion);

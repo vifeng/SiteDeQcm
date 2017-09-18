@@ -6,8 +6,9 @@ extract($_GET);
 
 if (!empty($idTheme)){
 $idTheme=intval($idTheme);
-	echo "<div><button type='submit' name='modifier' value='modifier' class='btn btn-sm btn-warning'><span class='icon-input-btn glyphicon glyphicon-pencil'></span> Modifier</button>";
-	echo "<span style='margin-left:10px;'></span><button type='submit' name='supprimer' value='supprimer' class='btn btn-sm btn-danger'><span class='icon-input-btn glyphicon glyphicon-trash'></span> Supprimer</button></div><br />";
+	// TODO MODELE A ECRIRE
+	// echo "<div><button type='submit' name='modifier' value='modifier' class='btn btn-sm btn-warning'><span class='icon-input-btn glyphicon glyphicon-pencil'></span> Modifier</button>";
+	echo "<div><span style='margin-left:10px;'></span><button type='submit' name='supprimer' value='supprimer' class='btn btn-sm btn-danger'><span class='icon-input-btn glyphicon glyphicon-trash'></span> Supprimer</button> <span> Attention, vous ne pouvez pas supprimer une question qui a été utilisé dans un qcm. </span></div><br />";
 
 $result=selectQuestionTheme($idTheme);
 	$form = "<div class='list-group'>";

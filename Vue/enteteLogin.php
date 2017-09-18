@@ -7,10 +7,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 	
   <!-- Bootsrap -->
-   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   
     <!-- Bootstrap Vertical Nav -->
-    <link rel="stylesheet" href="css/bootstrap-vertical-menu.css">
+      <link rel="stylesheet" href="css/bootstrap-vertical-menu.css">
      <!-- Bootstrap Sticky Footer -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
     <!-- Other CSS -->
@@ -28,10 +28,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   <!-- END OF Bootsrap -->
-
-  
-
-
   <title></title>
 </head>
 		<body>

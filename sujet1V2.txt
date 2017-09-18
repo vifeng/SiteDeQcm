@@ -1,0 +1,203 @@
+
+	* SQL
+	************************************/
+	// PK -> Primary Key ; FK -> Foreign Key ; UI -> Unique Index
+
+
++	Table User
+	____________________
+	PK		idUser
+			nom
+			prenom
+			mail
+			login
+			motdepasse
+	FK		idStatut 
+
+
++	Table Statut
+	____________________
+	PK		idStatut
+			statut
+
++	Table Theme
+	____________________
+	PK		idTheme
+			theme
+
+
++	Table Question
+	____________________
+	PK		idQuestion
+	UI		question
+	FK		idProf (reference idUser)
+	FK		idTheme
+
+
++	Table Reponse
+	____________________
+	PK		idReponse
+	PK FK	idQuestion (reference idQuestion)
+			reponse
+			statutReponse (Vrai ou Faux)
+	FK		idTheme
+
+
++	Table QCM
+	____________________
+	PK		idQcm
+			DateLimite
+	FK		idTheme
+	PK FK	idQuestion
+	PK FK	idReponseA
+	PK FK	idReponseB
+	PK FK	idReponseC
+
+
++	Table Resultat
+	____________________
+	PK FK	idEleve (reference idUser)
+	PK FK	idQcm
+	PK FK	idQuestion
+	FK		idReponse
+			points
+
++	Table Erreur
+	____________________
+	PK	idErreur
+		Erreur
+
+
+
+
+	************************************/
+	* FONCTIONS à ECRIRE pour le MVC
+	************************************/
+
+	*/
+	* MODELE
+	*/
+
+	Set
+	____________________
++	setTheme($theme)
++	setStatut($statut)
++	setUser($nom,$prenom, $mail, $login, $motdepasse, $idstatut)
++	setQuestion($question, $idprof, $idtheme)
++	setReponse($idQuestion, $reponse, $statutReponse, $idTheme)
++	setQcm($DateLimite, $idtheme, $idQuestion, $idReponseA, $idReponseB, $idReponseC)
++	setResultat($idEleve, $idQcm, $idQuestion, $idReponse, $points)
+
+
+	Get
+	____________________
+	getQuestion($idQuestion)
+	getQuestionByTheme($theme)
+	getReponse($idReponse)
+	getQcm($idQcm)
+	getNotesByQcm($idQcm)
+	getNotesByEleve($idEleve)
+
+
+	Delete
+	____________________
++	deleteQuestion($idQuestion)
++	deleteReponse($idResponse)
+
+
+	Update
+	____________________
++	updateQuestion($question, $idtheme, $idprof)
++	updateReponse($idReponse, $reponse, $statutReponse)
++	updateTheme($theme)
++	updateQcm($idtheme, $DateLimite, $idQuestion1, $idReponse1A, $idReponse1B, $idReponse1C, $idQuestion2, $idReponse2A, $idReponse2B, $idReponse2C, $idQuestion3, $idReponse3A, $idReponse3B, $idReponse3C, $idQuestion4, $idReponse4A, $idReponse4B, $idReponse4C, $idQuestion5, $idReponse5A, $idReponse5B, $idReponse5C)
++	updateNotes($idQcm, $idEleve, $notes)
+
+
+
+	*/
+	* CONTROLEUR
+	*/
+
+	connexion
+	deconnexion
+	(creationCompte)
+
+	MenuEnseignant
+		creerQuestion
+		voirQuestions
+		générerQcm
+		voirNotesEleves
+		voirNotesparQcm
+
+	MenuEleve
+		ListedesQcm
+		QcmEnAttente
+		consulterNote
+
+
+
+
+	*/
+	* VUE
+	*/
+
+	généraux
+	____________________
++	header.php
++	footer.php
++	menuEnseignant.php
++	menuEleve.php
++	connexion.php
++	deconnexion.php
+-	(creationCompte.php)
+
+
+	Affichage
+	____________________
+	vueQuestionsReponseStatuts
+	TableauNotesByQcm
+	TableauNotesByEleves
+
+
+	Form
+	____________________
+	FormVueQcmchoisi
+	FormVueQuestionByTheme
+	FormVueQuestionReponse
+
+	FormAjoutQuestionReponse
+	(FormModifQuestionReponse)
+	FormAjoutQcm
+	FormModifQuestionReponse
+	FormAjoutTheme
+
+
+
+
+	************************************/
+	* VARIABLES DE SESSION
+	************************************/
+
+
+
+	************************************/
+	* COOKIES
+	************************************/
+
+	$nom
+	$prenom
+
+	************************************/
+	* AMELIORATION EVENTUELLE
+	************************************/
+
+-	Module de chat avec le prof (fait à adapter)
+	avatar pour le membre 
+	Télécharger son qcm 
+	voir notes par thèmes
+	modifier, supprimer un QCM
+
+	Inscription.php avec authorisation d'inscription pour prof =>envoie d'un mail, lien pour "OK"
+	oubli.php -> oubli mot de passe.
+

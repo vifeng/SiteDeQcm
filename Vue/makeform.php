@@ -1,15 +1,9 @@
 <?php 
-/////////////////////////////////
+//Fonction pour créer des formulaires
 
-//Fonctions pour créer des formulaires automatiquement
-//exemple d'usage d'une de ces fonctions : 
-
-/////////////////////////////////
-
-
-// crée autant d'input que le tab passé en paramètre 
-// (le type dépends du label - par défaut text)
-//  prends en compte les cookies if existant 
+//crée autant d'input que le tab passé en paramètre 
+//(le type dépends du label - par défaut text)
+// prends en compte les cookies if existant 
 function createInput ($tab, $type='text', $maxlength='', $size='',$sep="<br />", $placeholder=''){
 	$form="";
 		foreach ($tab as $labelAccent => $label) {
